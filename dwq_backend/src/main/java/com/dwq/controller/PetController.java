@@ -27,7 +27,7 @@ public class PetController {
        if(petService.addPet(pet))
        return RestBean.success();
        else
-       return RestBean.failure(401,"添加宠物失败");
+       return RestBean.failure(300,"添加宠物失败");
     }
 
     @DeleteMapping("/{id}")
